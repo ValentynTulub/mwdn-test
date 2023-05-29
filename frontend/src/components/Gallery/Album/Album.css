@@ -1,0 +1,9 @@
+.album{
+
+}
+
+.album__image-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

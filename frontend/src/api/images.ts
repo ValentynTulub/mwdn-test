@@ -1,4 +1,5 @@
 import client from "./client";
+import {AxiosResponse} from "axios";
 
 export interface Image {
     albumId: number;
@@ -10,6 +11,6 @@ export interface Image {
 }
 
 export type AlbumsResponse = Array<Array<Image>>
-export async function getImages(){
-    return client.get<any, AlbumsResponse>('/images');
+export async function getImages(): Promise<AxiosResponse<AlbumsResponse>> {
+    return client.get<any, AxiosResponse<AlbumsResponse>>('/images');
 }

@@ -1,0 +1,45 @@
+.album-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+    border: 1px solid darkgray;
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+
+.album-image:hover {
+    border-color: #6b6b6b;
+}
+
+.album-image__image {
+    height: 150px;
+    max-width: 150px;
+    flex-grow: 0;
+}
+
+.album-image__title {
+    font-size: 0.75rem;
+
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    flex-grow: 0;
+
+    max-width: calc(100% - 1rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.album-image__title:first-letter {
+    text-transform: capitalize;
+}
