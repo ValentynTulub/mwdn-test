@@ -1,0 +1,68 @@
+.carousel {
+}
+
+.carousel__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel__content__image {
+    height: 600px;
+    max-width: 100%;
+}
+
+.carousel__content__control {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel__content__prev {
+    -webkit-mask-image: url('../../../../public/assets/icons/arrow-left.png');
+    mask-image: url('../../../../public/assets/icons/arrow-left.png');
+}
+
+.carousel__content__next {
+    -webkit-mask-image: url('../../../../public/assets/icons/arrow-right.png');
+    mask-image: url('../../../../public/assets/icons/arrow-right.png');
+}
+
+.carousel__content__control {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.carousel__stepper {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel__stepper__item {
+    margin-right: 0.5rem;
+
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border-width: 0;
+}
+
+.carousel__stepper__item:hover {
+    background: #d4d4d4;
+}
+
+.carousel__stepper__item:active {
+    background: #c9c9c9;
+}
+
+.carousel__stepper__active-item {
+    background: #c9c9c9;
+}

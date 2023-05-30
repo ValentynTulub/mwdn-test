@@ -3,3 +3,8 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.gallery__carousel__modal__body {
+    width: 800px;
+    margin: auto;
+}
